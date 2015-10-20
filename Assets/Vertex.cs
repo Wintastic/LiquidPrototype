@@ -4,9 +4,8 @@ using System.Collections.Generic;
 
 public class Vertex
 {
-    public Vector2 Position { get; set; }
-    public float Height { get; set; }
-    public Vertex[] Neighbours { get; set; }
+    public Vector3 Position;
+    public Vertex[] Neighbours;
 
     /// <summary>
     /// 
@@ -14,10 +13,9 @@ public class Vertex
     /// <param name="position"></param>
     /// <param name="height"></param>
     /// <param name="neighbours">An array of 8 possible neighbours, starting top left going clockwise</param>
-    public Vertex(Vector2 position, float height, Vertex[] neighbours)
+    public Vertex(Vector3 position, Vertex[] neighbours)
     {
         this.Position = position;
-        this.Height = height;
         this.Neighbours = neighbours;
     }
 }
