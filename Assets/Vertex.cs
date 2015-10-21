@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class Vertex
 {
     public Vector3 Position;
+    public float Velocity;
     public Vertex[] Neighbours;
 
     /// <summary>
@@ -16,6 +17,7 @@ public class Vertex
     public Vertex(Vector3 position, Vertex[] neighbours)
     {
         this.Position = position;
+        this.Velocity = 0;
         this.Neighbours = neighbours;
     }
 }
